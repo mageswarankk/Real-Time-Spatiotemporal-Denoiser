@@ -8,3 +8,6 @@ The spatial component joint bilateral filter employed the following information:
 Additionally, the shader incorporated a temporal component by blending the current frame with the previous denoised frame, guided by motion vectors to account for any movement. This temporal filtering helped in further reducing noise while maintaining temporal coherence across frames. In the video, you can see multiple techniques used in temporal clamping. I observed the lagging caused when no clamping is used. However, when I clamped the temporal output to the pixel in the noisy image, I didn’t like the trade-off between noise and lagging. There was too much noise. So, I also tried clamping the temporal output to the pixel in the spatially filtered image. While this gave the final product the same artifacts produced by just spatial filtering, I think it looked more visually pleasing.
 
 Implementing a joint bilateral filter in GLSL deepened my understanding of shader programming and the utility of various buffers in denoising. Additionally, the project helped me experiment with other real-time rendering techniques, such as frame rate control, texture management, and, most importantly, performance optimization.
+
+
+[![Watch the video](https://img.youtube.com/vi/MqXORUgg0ho/maxresdefault.jpg)](https://www.youtube.com/watch?v=MqXORUgg0ho)
