@@ -9,5 +9,5 @@ Additionally, the shader incorporated a temporal component by blending the curre
 
 Implementing a joint bilateral filter in GLSL deepened my understanding of shader programming and the utility of various buffers in denoising. Additionally, the project helped me experiment with other real-time rendering techniques, such as frame rate control, texture management, and, most importantly, performance optimization.
 
-
+Watch the video demonstration below:
 [![Watch the video](https://img.youtube.com/vi/MqXORUgg0ho/maxresdefault.jpg)](https://www.youtube.com/watch?v=MqXORUgg0ho)
